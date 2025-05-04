@@ -46,3 +46,9 @@ A minimal, containerized Python application to estimate carbon footprint based o
 - [Base Carbone – ADEME (France)](https://data.ademe.fr/datasets/base-carbone)
 
 
+# Running the App Locally
+
+You can use the included `run_local.sh` to rebuild and start the Docker container:
+
+```sh
+./run_local.sh

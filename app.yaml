@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carbon-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: carbon-app
+  template:
+    metadata:
+      labels:
+        app: carbon-app
+    spec:
+      containers:
+      - name: carbon-app
+        image: your-dockerhub/carbon-app:latest
+        ports:
+        - containerPort: 5000
